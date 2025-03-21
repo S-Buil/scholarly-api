@@ -41,6 +41,3 @@ def search_scholar(query: str = Query(..., description="Zoekterm voor Google Sch
             return {"error": str(e)}
 
     return {"results": results}
-    @app.get("/")
-def root():
-    return {"message": "Scholarly API is live! Gebruik /search?query=..."}
